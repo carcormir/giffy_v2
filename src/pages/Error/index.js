@@ -8,7 +8,7 @@ import SearchForm from 'components/SearchForm';
 export default function ErrorPage () {
     return (
         <>
-            <h1>404 ERROR</h1>
+            <h1>404 ERROR - please help</h1>
         </>
     )
 }
