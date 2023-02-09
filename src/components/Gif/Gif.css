@@ -1,0 +1,35 @@
+.Gif{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+    border-color: #5d33ff;
+    border-radius: 1px;
+    border-style: double;
+}
+
+.Gif-link {
+    color: #5d33ff;
+    display: block;
+    text-decoration: none;
+    position: relative;
+    width: 100%;
+  }
+
+.Gif h4 {
+    margin: 0;
+    position: absolute;
+    font-size: small;
+    background-color: beige;
+    border-color: #5d33ff;
+    border-radius: 1px;
+    border-style: dashed;
+    bottom: 0;
+}
+
+.Gif img {
+    object-fit: contain;
+    width: 100%;
+    vertical-align: top;
+}
+
