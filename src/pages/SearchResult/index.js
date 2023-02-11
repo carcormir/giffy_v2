@@ -6,6 +6,7 @@ import {useGifs} from '../../hooks/useGifs'
 import useNearScreen from '../../hooks/useNearScreen';
 import debounce from 'lodash.debounce'
 import {Helmet} from 'react-helmet'
+import Spinner from 'components/Spinner';
 
 function SearchResult () {
     const { keyword } = useParams()
@@ -27,7 +28,7 @@ function SearchResult () {
 
     return <>
         {loading
-            ? <h1>Loading ...</h1>
+            ? <Spinner></Spinner> //<h1>Loading ...</h1>
             : 
             <>  
                 <Helmet>
