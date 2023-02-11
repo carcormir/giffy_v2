@@ -11,8 +11,8 @@ import SearchForm from 'components/SearchForm';
 
 
 function SearchResult () {
-    const { keyword } = useParams()
-    const { loading, gifs , setPage } = useGifs({keyword})
+    const { keyword , rating = 'g' } = useParams()
+    const { loading, gifs , setPage } = useGifs({keyword , rating})
     const externalRef = useRef()
     const { isNearScreen } = useNearScreen({ 
         externalRef: loading ? null : externalRef,

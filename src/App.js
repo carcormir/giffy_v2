@@ -23,7 +23,7 @@ function App() {
                     element={<Home />}
                     />
                   <Route 
-                    path="/search/:keyword"
+                    path="/search/:keyword/:rating?"
                     element={<SearchResults />}
                     />
                   <Route 
