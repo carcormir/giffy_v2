@@ -8,19 +8,12 @@ import {Helmet} from 'react-helmet'
 
 const POPULAR_GIFS = ["Emo music", "Banana", "Apple"]
 export default function Home () {
-    const navigate = useNavigate()
     const { loading, gifs } = useGifs()
 
     // const handleSubmit = ({keyword}) => {
     //     // navigate to different route
     //     navigate(`/search/${keyword}`)
     // }
-
-    const handleSubmit = useCallback(
-        ({keyword}) => {
-            // navigate to different route
-            navigate(`/search/${keyword}`)
-        }, [navigate])
     
     return (
         <>
@@ -29,7 +22,7 @@ export default function Home () {
             </Helmet>
             
             <header>
-                <SearchForm onSubmit={handleSubmit} />
+                <SearchForm />
             </header>
 
             <h3 className="App-title">Last search</h3>

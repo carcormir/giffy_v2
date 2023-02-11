@@ -1,14 +1,15 @@
-import { useState } from "react"
+import { useState , useCallback } from "react"
+import { useNavigate } from "react-router" 
 
-export default function SearchForm ( {onSubmit } ) {
+export default function SearchForm ( ) {
 
     const [keyword, setKeyword] = useState('')
+    const navigate = useNavigate()
 
     const  handleSubmit = evt => {
         evt.preventDefault()
         // navigate to different route
-        onSubmit({keyword})
-        
+        navigate(`/search/${keyword}`)
     }
 
     const handleChange = evt => {

@@ -7,6 +7,8 @@ import useNearScreen from '../../hooks/useNearScreen';
 import debounce from 'lodash.debounce'
 import {Helmet} from 'react-helmet'
 import Spinner from 'components/Spinner';
+import SearchForm from 'components/SearchForm';
+
 
 function SearchResult () {
     const { keyword } = useParams()
@@ -36,6 +38,9 @@ function SearchResult () {
                     <meta name="description" content=
                     {title}></meta>
                 </Helmet>
+                <header>
+                    <SearchForm />
+                </header>
                 <h3>You are looking for ... {decodeURI(keyword)}</h3>
                 <ListOfGifs gifs={gifs} />
                 <div id="watcher" ref={externalRef}></div>
