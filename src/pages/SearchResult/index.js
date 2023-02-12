@@ -39,7 +39,7 @@ function SearchResult () {
                     {title}></meta>
                 </Helmet>
                 <header>
-                    <SearchForm />
+                    <SearchForm initialKeyword={keyword} initialRating={rating}/>
                 </header>
                 <h3>You are looking for ... {decodeURI(keyword)}</h3>
                 <ListOfGifs gifs={gifs} />

@@ -3,9 +3,9 @@ import { useNavigate } from "react-router";
 
 const RATINGS = ["g", "pg", "pg-13", "r"];
 
-export default function SearchForm() {
-  const [keyword, setKeyword] = useState("");
-  const [rating, setRating] = useState(RATINGS[0]);
+export default function SearchForm({initialKeyword  = '', initialRating = 'g'}) {
+  const [keyword, setKeyword] = useState(decodeURI(initialKeyword));
+  const [rating, setRating] = useState(initialRating);
   const navigate = useNavigate();
 
   const handleSubmit = (evt) => {

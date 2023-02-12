@@ -6,14 +6,8 @@ import TrendindSearches from '../../components/TrendingSearches';
 import SearchForm from 'components/SearchForm';
 import {Helmet} from 'react-helmet'
 
-const POPULAR_GIFS = ["Emo music", "Banana", "Apple"]
 export default function Home () {
-    const { loading, gifs } = useGifs()
-
-    // const handleSubmit = ({keyword}) => {
-    //     // navigate to different route
-    //     navigate(`/search/${keyword}`)
-    // }
+    const { gifs } = useGifs()
     
     return (
         <>
@@ -31,18 +25,6 @@ export default function Home () {
             <h3 className="App-title">The most popular gifs</h3>
             <TrendindSearches/>
             
-            {/* <ul>
-                {
-                    POPULAR_GIFS.map((popularGif) => (
-                        <li key={popularGif}>
-                            <Link to={`/search/${popularGif}`}>
-                            {popularGif} gifs
-                            </Link>
-                        </li>
-                        )
-                    )
-                }
-            </ul> */}
         </>
     )
 }

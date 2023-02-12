@@ -3,7 +3,7 @@ import getSingleGifs from "services/getSingleGif";
 import { useGifs } from "./useGifs";
 
 export default function useSingleGif({ id }) {
-    const {gifs} = useGifs() //this comes from the context
+    const { gifs } = useGifs() //this comes from the context
     const gifFromCache = gifs.find(singleGif => singleGif.id === id)
 
     const [gif, setGif] = useState(gifFromCache)

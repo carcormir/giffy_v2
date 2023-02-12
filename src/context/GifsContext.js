@@ -7,7 +7,7 @@ const GifsContext = React.createContext({
 export function GifsContextProvider({children}){
     // children -> is what the provider is going to wrap
     const [gifs, setGifs] = useState([])
-    
+
     return <GifsContext.Provider value={{gifs, setGifs}}>
         {children}
     </GifsContext.Provider>
