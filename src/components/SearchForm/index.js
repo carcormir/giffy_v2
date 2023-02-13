@@ -1,29 +1,8 @@
-import { useState, useCallback, useReducer } from "react";
+import { useState, useCallback } from "react";
 import { useNavigate } from "react-router";
+import useForm from "./hook";
 
 const RATINGS = ["g", "pg", "pg-13", "r"];
-const ACTIONS = {
-  UPDATE_KEYWORD: 'update_keyword', 
-  UPDATE_RATING: 'update_rating'
-}
-
-const reducer = (state, action) => {
-  switch (action.type) {
-    case ACTIONS.UPDATE_KEYWORD:
-      return {
-        ...state,
-        keyword: action.payload,
-        times: state.times + 1
-      }
-    case ACTIONS.RATINGS:
-      return {
-        ...state,
-        rating: action.payload
-      }
-    default:
-      return state
-  }
-}
 
 export default function SearchForm({
   initialKeyword  = '', 
@@ -34,13 +13,7 @@ export default function SearchForm({
 
   //const [rating, setRating] = useState(initialRating);
 
-  const [state, dispach] = useReducer(reducer, {
-    keyword: decodeURI(initialKeyword),
-    rating: initialRating,
-    times: 0
-  })
-
-  const {keyword, rating, times} = state // recover the state that is in the reducer
+  const {keyword, rating, times, updateKeyword, updateRating} = useForm({initialKeyword, initialRating}) // recover the state that is in the useForm hook
 
   const handleSubmit = (evt) => {
     evt.preventDefault();
@@ -49,11 +22,11 @@ export default function SearchForm({
   };
 
   const handleChange = (evt) => {
-    dispach({ type: ACTIONS.UPDATE_KEYWORD, payload: evt.target.value }) // receives the keyword
+    updateKeyword(evt.target.value)
   };
 
   const handleChangeRating = (evt) => {
-    dispach({ type: ACTIONS.UPDATE_RATING, payload: evt.target.value })
+    updateRating(evt.target.value)
   }
 
   return (
