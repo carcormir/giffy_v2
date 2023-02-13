@@ -3,10 +3,15 @@ import { useNavigate } from "react-router";
 
 const RATINGS = ["g", "pg", "pg-13", "r"];
 
-export default function SearchForm({initialKeyword  = '', initialRating = 'g'}) {
+export default function SearchForm({
+  initialKeyword  = '', 
+  initialRating = RATINGS[0]
+}) {
+  
+  const navigate = useNavigate();
+
   const [keyword, setKeyword] = useState(decodeURI(initialKeyword));
   const [rating, setRating] = useState(initialRating);
-  const navigate = useNavigate();
 
   const handleSubmit = (evt) => {
     evt.preventDefault();

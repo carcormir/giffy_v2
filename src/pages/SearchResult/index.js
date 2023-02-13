@@ -19,7 +19,7 @@ function SearchResult () {
         once: false  
     })
     
-    const title = gifs ? `${gifs.length} ${keyword} results` : ''
+    const title = gifs ? `${gifs.length} resultados de ${keyword}` : ''
     const debounceHandleNextPage = useCallback(debounce(
         () => setPage(prevPage => prevPage + 1), 200
     ), [setPage])
