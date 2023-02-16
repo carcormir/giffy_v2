@@ -1,0 +1,18 @@
+.gf-Fav {
+    background: violet;
+    border: 0;
+    border-radius: 200px;
+    cursor: pointer;
+    width: 65px;
+    height: 30px;
+    transition: all .3s ease;
+}
+
+.gf-Fav:hover{
+    background: violet;
+    opacity: 0.6;
+}
+
+.gf-Fav span {
+    display: block;
+}

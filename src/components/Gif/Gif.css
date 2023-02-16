@@ -6,6 +6,7 @@
     border-color: #5d33ff;
     border-radius: 1px;
     border-style: double;
+    position: relative;
 }
 
 .Gif-link {
@@ -15,6 +16,13 @@
     position: relative;
     width: 100%;
   }
+
+.Gif-buttons {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    z-index: 1;
+}
 
 .Gif h4 {
     margin: 0;
