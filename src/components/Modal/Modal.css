@@ -1,0 +1,24 @@
+.modal {
+  background-color: rgb(255, 255, 255, 0.6);
+  backdrop-filter: blur(10px);
+  position: fixed;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 20;
+}
+
+.modal-content {
+  background: rgb(143, 143, 136);
+  width: 300px;
+  padding: 10px 20px;
+  height: 80vh;
+  margin: 10vh auto;
+  position: relative;
+}
+
+.modal-content .btn {
+  display: block;
+  margin-bottom: 32px;
+}

@@ -1,0 +1,27 @@
+.form {
+  max-width: 320px;
+  width: 100%;
+}
+
+.form label {
+  font-size: 14px;
+  display: block;
+  margin-bottom: 4px;
+
+}
+
+.form input {
+  background: white;
+  border: none;
+  display: block;
+  line-height: 2;
+  font-size: 16px;
+  width: 94%;
+  padding: 0 8px;
+  margin-top: 4px;
+  margin-bottom: 16px;
+}
+
+.form .btn {
+  width: 100%;
+}

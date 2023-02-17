@@ -6,7 +6,7 @@ import Home from './pages/Home'
 import SearchResults from './pages/SearchResult'
 import Detail from './pages/Detail'
 import ErrorPage from "pages/Error";
-import Login from "pages/Login"
+import LoginPage from "pages/Login"
 
 import Header from "components/Header";
 
@@ -44,7 +44,7 @@ function App() {
                       />
                     <Route 
                       path="/login"
-                      element={<Login />}
+                      element={<LoginPage />}
                       />
                     </Routes>
               </GifsContextProvider>
