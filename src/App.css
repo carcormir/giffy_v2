@@ -33,6 +33,11 @@
   border-style: groove;
 }
 
+.btn[disabled] {
+  opacity: 0.3;
+  pointer-events: none; /*To avoid multiple clicks*/
+}
+
 h3 {
   color: #5d33ff;
   font-weight: normal;

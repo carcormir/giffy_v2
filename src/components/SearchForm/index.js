@@ -44,7 +44,7 @@ export default function SearchForm({
           <option key={rating}>{rating}</option>
         ))}
       </select>
-      <small>{times}</small>
+      {/* <small>{times}</small> */}
     </form>
   );
 }

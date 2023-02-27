@@ -33,6 +33,12 @@
   display: block;
 }
 
+.form small{
+  color: red;
+  font-size: 12px;
+  margin-top: -12px;
+  display: block;
+}
 .form input.error {
   border: 3px solid red;
 }

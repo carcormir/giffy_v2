@@ -15,9 +15,12 @@ export default function Header() {
     <header className="gf-header">
       {isLogged ? (
         <button onClick={handleOnclick}>Logout</button> // this should look like the anchor below
-      ) : (
-        <Link to="/login">Login</Link>
-      )}
+      ) : <>
+          <Link to="/login">Login</Link>
+          
+          <Link to="/register">Register</Link>
+        </>
+      }
     </header>
   );
 }

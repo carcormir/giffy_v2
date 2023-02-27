@@ -7,11 +7,12 @@ import SearchResults from './pages/SearchResult'
 import Detail from './pages/Detail'
 import ErrorPage from "pages/Error";
 import LoginPage from "pages/Login"
+import RegisterPage from "pages/Register";
 
 import Header from "components/Header";
 
-import { UserContext, UserContextProvider } from "context/UserContext";
-import { GifsContextProvider } from "./context/GifsContext";
+import { UserContextProvider } from "context/UserContext";
+import { GifsContextProvider } from "context/GifsContext";
 
 
 function App() {
@@ -45,6 +46,10 @@ function App() {
                     <Route 
                       path="/login"
                       element={<LoginPage />}
+                      />
+                    <Route 
+                      path="/register"
+                      element={<RegisterPage />}
                       />
                     </Routes>
               </GifsContextProvider>

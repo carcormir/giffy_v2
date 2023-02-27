@@ -10,7 +10,7 @@ app.use(bodyParser.json());
 app.use(cors());
 
 // In-memory database for demo purposes
-const users = [{ username: "carcormir", password: "0000" }];
+const users = [{ username: "carcormir", password: bcrypt.hashSync("0000", 10) }];
 const favs = [];
 
 // Endpoint to register a new user
@@ -38,7 +38,7 @@ app.post("/api/login", (req, res) => {
 
   // Check if user exists and password is correct
   
-  if (typeof user === "undefined" || !bcrypt.compareSync(password, bcrypt.hashSync(user.password, 10))) {
+  if (typeof user === "undefined" || !bcrypt.compareSync(password, user.password)) {
     return res.status(401).json({ message: "Invalid username or password" });
   }
 
