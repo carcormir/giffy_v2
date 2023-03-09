@@ -2,7 +2,8 @@
 This project was created in REACT.js and uses different functionalites and libraries to make the site as responsive as possible. 
 
 
-![giffy-gif](https://user-images.githubusercontent.com/28289997/224166894-966fed1d-7aa1-4528-9d4d-ac482d366cf0.gif)
+![giffy-gif](https://user-images.githubusercontent.com/28289997/224168027-196316b0-290b-4035-abb8-ebdaa1f4ba2a.gif)
+
 
 
 # WARNING!
