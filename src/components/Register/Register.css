@@ -1,4 +1,7 @@
 .form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   max-width: 320px;
   width: 100%;
 }
@@ -23,7 +26,19 @@
 }
 
 .form .btn {
-  width: 100%;
+  display: block;
+  background-color: var(--brand-color_9);
+  border: none;
+  border-radius: 30px;
+  color: white;
+  margin-bottom: 32px;
+  padding: 4px;
+  cursor: pointer;
+  transition: box-shadow 0.15s;
+}
+
+.form .btn:hover {
+  box-shadow: 0px 0px 5px white;
 }
 
 .form-error {
@@ -41,4 +56,12 @@
 }
 .form input.error {
   border: 3px solid red;
+}
+
+.form .input-label, .form .input-pwd-label {
+  margin-bottom: 0px;
+}
+
+.form .input-pwd-label {
+  margin-top: 3px;
 }

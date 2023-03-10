@@ -1,0 +1,32 @@
+.search-form {
+  display: flex;
+  border-bottom: 1px solid var(--brand-color_9);
+  justify-content: center;
+  padding-bottom: 45px;
+}
+
+.input-search {
+  border-top-left-radius: 28px;
+  border-bottom-left-radius: 28px;
+  border: 2px solid var(--brand-color_9);
+  font-size: 14px;
+  padding-left: 15px;
+  line-height: 30px;
+  margin-right: -1px;
+}
+
+.input-search:focus { 
+  outline: none;
+}
+
+.select-rate {
+  border: 2px solid var(--brand-color_9);
+  font-size: 14px;
+  margin-right: -1px;
+  width: 75px;
+  cursor: pointer;
+}
+
+.select-rate:focus { 
+  outline: none;  
+}

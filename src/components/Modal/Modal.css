@@ -10,15 +10,45 @@
 }
 
 .modal-content {
-  background: rgb(143, 143, 136);
+  background: var(--brand-color_8);
+  border-radius: 4px;
   width: 300px;
   padding: 10px 20px;
-  height: 80vh;
-  margin: 10vh auto;
+  height: 260px;
+  margin: 30vh auto;
   position: relative;
 }
 
 .modal-content .btn {
   display: block;
+  background-color: var(--brand-color_9);
+  border: none;
+  border-radius: 30px;
+  color: white;
   margin-bottom: 32px;
+  padding: 4px;
+  cursor: pointer;
+  transition: box-shadow 0.15s;
+
+
 }
+
+.modal-content .btn-close {
+  display: block;
+  color: white;
+  font-size: 20px;
+  background-color: var(--brand-color_9);
+  border: none;
+  border-radius: 40px;
+  margin-bottom: 25px;
+  margin-left: -8px;
+  margin-top: 2px;
+  padding-bottom: 4px;
+  cursor: pointer;
+  transition: box-shadow 0.15s;
+}
+
+.modal-content .btn:hover, .btn-close:hover {
+  box-shadow: 0px 0px 5px white;
+}
+

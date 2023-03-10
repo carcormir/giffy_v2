@@ -1,6 +1,8 @@
+import Button from "components/Button";
 import { useState, useCallback } from "react";
 import { useNavigate } from "react-router";
 import useForm from "./hook";
+import "./index.css";
 
 const RATINGS = ["g", "pg", "pg-13", "r"];
 
@@ -30,20 +32,21 @@ export default function SearchForm({
   }
 
   return (
-    <form onSubmit={handleSubmit}>
+    <form className="search-form" onSubmit={handleSubmit}>
       <input
+        className="input-search"
         placeholder="Search giff here..."
         onChange={handleChange}
         type="text"
         value={keyword}
-      ></input>
-      <button>Search</button>
-      <select onChange={handleChangeRating} value={rating}>
-        <option disabled>Raiting type</option>
+        ></input>
+      <select className="select-rate" onChange={handleChangeRating} value={rating}>
+        <option disabled>Rating type</option>
         {RATINGS.map((rating) => (
           <option key={rating}>{rating}</option>
-        ))}
+          ))}
       </select>
+      <Button>Search</Button>
       {/* <small>{times}</small> */}
     </form>
   );

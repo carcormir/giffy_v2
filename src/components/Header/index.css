@@ -4,10 +4,24 @@
 }
 
 .gf-header a {
-    color: #ffff;
-    font-size: 16px;
-    font-weight: 600;
+  color: #ffff;
+  font-size: 16px;
+  font-weight: 600;
 }
+
+.gf-header button {
+  background: none;
+  border: none;
+  color: #ffff;
+  font-size: 16px;
+  font-weight: 600;
+  margin: 0 22px;
+  cursor: pointer;
+}
+
+.gf-header button:hover {
+  text-decoration: underline;
+} 
 
 .gf-header a:hover {
     text-decoration: underline;
