@@ -1,9 +1,10 @@
 /** @jsxImportSource @emotion/react */
 
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import SearchForm from "components/SearchForm";
 import { Helmet } from "react-helmet";
 import { css, jsx } from '@emotion/react'
+import Button from "components/Button";
 
 const gifsErrors = [
   "d2jjuAZzDSVLZ5kI",
@@ -70,7 +71,7 @@ export default function ErrorPage() {
           <span css={codeErrorStyles}>404</span>
           <span css={msgErrorStyles}>Sometimes gettings lost isn't that bad</span>
           <img css={gifErrorStyles} src={randomImage()} alt="alt-page-404" />
-          <button onClick={handleOnClick}>Go back home</button>
+          <Button to={"/"}>Go back home</Button>
         </div>
       </div>
     </>

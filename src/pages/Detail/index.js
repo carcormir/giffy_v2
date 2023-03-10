@@ -27,7 +27,10 @@ export default function Detail ( ) {
         <Helmet>
             <title>{title} || Giffy</title>
         </Helmet>
-        <Gif {...gif} />
+        <div className="Gif-detail-container">
+          <div className='Gif-detail-header'></div>
+          <Gif {...gif} />
+        </div>
     </>
     
 }

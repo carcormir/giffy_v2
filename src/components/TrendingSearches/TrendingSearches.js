@@ -9,5 +9,11 @@ export default function TrendingSearches () {
         getTrendingTerms().then(setTrends)
     }, [])
     
+    // THIS IS THE EXTENDED VERSION OF THE LINES ABOVE
+    // useEffect(function(){
+    //     getTrendingTerms().then(nextTrends => {
+    //         setTrends(prevTrends => prevTrends.concat(nextTrends))})
+    // }, [])
+
     return <Category name='Trends' options={trends} />
 }

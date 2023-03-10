@@ -2,7 +2,9 @@ import Register from "components/Register";
 
 export default function RegisterPage() {
   return  <>
-    <h2>Register page</h2>
-    <Register />
+    <div className="login-container">
+      <span className="App-title">Register page</span>
+      <Register />
+    </div>
   </>
 }

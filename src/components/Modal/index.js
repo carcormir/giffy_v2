@@ -5,8 +5,8 @@ function Modal({ children, onClose }) {
   return (
     <div className="modal">
       <div className="modal-content">
-        <button className="btn" onClick={onClose}>
-          ✖️
+        <button className="btn-close" onClick={onClose}>
+          ｘ
         </button>
         {children}
       </div>

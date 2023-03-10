@@ -29,15 +29,17 @@ export default function Register() {
   return (
     <>
       <form className="form" onSubmit={handleSubmit(onSubmit)}>
+        <label className="input-label" htmlFor="username">username</label>
         <input
           {...register("username", { required: true })}
           className={errors.username ? "error" : ""}
-          placeholder="Enter the username"
+          placeholder="Enter a valid username"
         />
         {errors.name && errors.name.type === "required" && (
           <span>This is required</span>
         )}
 
+        <label className="input-pwd-label" htmlFor="password">password</label>
         <input
           id="password"
           {...register("password", {
@@ -46,7 +48,7 @@ export default function Register() {
           })}
           className={errors.password ? "error" : ""}
           type="password"
-          placeholder="Enter the password"
+          placeholder="Enter a valid password"
         />
 
         {errors.name && errors.name.type === "minLength" && (

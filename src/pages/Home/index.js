@@ -19,10 +19,10 @@ export default function Home () {
                 <SearchForm />
             </header>
 
-            <h3 className="App-title">Last search</h3>
+            <span className="App-title">Last search</span>
             <ListOfGifs gifs={gifs} />
 
-            <h3 className="App-title">The most popular gifs</h3>
+            <span className="App-title">The most popular gifs</span>
             <TrendindSearches/>
             
         </>

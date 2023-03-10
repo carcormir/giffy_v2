@@ -25,7 +25,10 @@ function App() {
               <GifsContextProvider>
                   <Header />
                   <Link to="/">
-                    <img className="App-logo" alt='Giffy logo' src='/logo.png'/>
+                    <div className="App-logo-container">
+                      <img className="App-logo-img" alt='Giffy logo' src='/app-logo.png'/>
+                      <span className="App-logo-title">Giffy search app</span>
+                    </div>
                   </Link>
                   <Routes>
                     <Route path="/" 

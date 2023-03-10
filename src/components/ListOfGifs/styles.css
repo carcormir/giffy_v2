@@ -2,6 +2,8 @@
 .ListOfGifs {
   display: grid;
   min-height: 100vh;
+  margin-right: 20px;
+  margin-left: 20px;
   /* grid-template-columns: repeat(4, 1fr); create 4 columns of 1 fr */
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* create flexible columns with fixed min width and flexible max */
   gap: 0 16px; /* remove vertical gap */

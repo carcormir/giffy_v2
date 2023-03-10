@@ -1,27 +1,27 @@
 import React from "react";
-import { Link } from "react-router-dom";
-// import {
-//   CategoryTitle,
-//   CategoryListItem,
-//   CategoryLink,
-//   CategoryList,
-// } from "./styles";
+
+import {
+  CategoryTitle,
+  CategoryListItem,
+  CategoryLink,
+  CategoryList,
+} from "./styles";
 // import "./Category.css";
 
 export default function Category({ name, options = [] }) {
   return (
     <section>
-      <h1>{name}</h1>
+      <CategoryTitle>{name}</CategoryTitle>
       
-        <ul>
+        <CategoryList>
             {options.map((singleOption, index) => (
-                <li key={singleOption}> 
-                    <Link to={`/search/${singleOption}`}>
+                <CategoryListItem key={singleOption} index={index}> 
+                    <CategoryLink to={`/search/${singleOption}`}>
                     {singleOption}
-                    </Link>
-                </li>
+                    </CategoryLink>
+                </CategoryListItem>
             ))}
-        </ul>
+        </CategoryList>
     </section>
   );
 }
