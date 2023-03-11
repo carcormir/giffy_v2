@@ -13,7 +13,7 @@ const REDUCER = (state, action) => {
         keyword: action.payload,
         times: state.times + 1
       }
-    case ACTIONS.RATINGS:
+    case ACTIONS.UPDATE_RATING:
       return {
         ...state,
         rating: action.payload
@@ -42,6 +42,6 @@ export default function useForm ({
         updateKeyword: keyword => 
         dispach({ type: ACTIONS.UPDATE_KEYWORD, payload: keyword }),
         updateRating: rating => 
-        dispach({ type: ACTIONS.UPDATE_RATING, payload: rating}) 
+        dispach({ type: ACTIONS.UPDATE_RATING, payload: rating }),
     }
 }
