@@ -5,7 +5,7 @@ Deployed app: https://giffy-v2-carcormir.vercel.app
 This project was created in REACT.js and uses different functionalites and libraries to make the site as responsive as possible. 
 
 - TODO:
-  * Fix rating functionality
+  * Fix rating functionality ✅
   * Add error when Login and Register do not connect to the API.
   * Improve responsiveness
   * Improve multibrowser compatibility
