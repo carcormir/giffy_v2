@@ -2,7 +2,7 @@ import { Link , useLocation , useNavigate } from 'react-router-dom';
 import { useState , useCallback } from 'react';
 import { useGifs } from '../../hooks/useGifs';
 import ListOfGifs from '../../components/ListOfGifs';
-import TrendindSearches from '../../components/TrendingSearches';
+import TrendingSearches from '../../components/TrendingSearches';
 import SearchForm from 'components/SearchForm';
 import {Helmet} from 'react-helmet'
 
@@ -23,7 +23,7 @@ export default function Home () {
             <ListOfGifs gifs={gifs} />
 
             <span className="App-title">The most popular gifs</span>
-            <TrendindSearches/>
+            <TrendingSearches/>
             
         </>
     )

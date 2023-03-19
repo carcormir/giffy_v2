@@ -16,7 +16,7 @@ function SearchResult () {
     const externalRef = useRef()
     const { isNearScreen } = useNearScreen({ 
         externalRef: loading ? null : externalRef,
-        once: false, distance:'200px'  
+        once: false, distance:'100px'  
     })
     
     const title = gifs ? `${gifs.length} results of ${keyword}` : ''
