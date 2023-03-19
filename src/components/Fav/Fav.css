@@ -1,4 +1,7 @@
 .gf-Fav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background: #ab96ff;
   border: 0;
   border-radius: 200px;
@@ -14,6 +17,7 @@
 }
 
 .gf-Fav span {
-  display: block;
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

@@ -3,7 +3,10 @@
   border-bottom: 1px solid var(--brand-color_9);
   justify-content: center;
   padding-bottom: 45px;
+  scale: 1.0;
 }
+
+
 
 .input-search {
   border-top-left-radius: 28px;
@@ -32,4 +35,13 @@
 
 .select-rate:focus {
   outline: none;
+}
+
+@media screen and (max-width: 428px) {
+
+  .input-search,
+  .select-rate {
+    font-size: 12px;
+  }
+
 }

@@ -8,11 +8,11 @@
 
 .App-title {
   color: white;
-  font-size:xx-large;
+  font-size: xx-large;
   font-weight: 200;
   margin-top: 40px;
   margin-bottom: 2%;
-  
+
 }
 
 .App-content {
@@ -42,6 +42,16 @@
   font-size: 40px;
 }
 
+@media screen and (max-width: 428px) {
+  body {
+    background-color: var(--brand-color_8);
+  }
+
+  .App-logo-title {
+    font-size: 30px;
+  }
+}
+
 .App-logo-img {
   height: 100px;
 }
@@ -60,5 +70,6 @@
 
 .btn[disabled] {
   opacity: 0.3;
-  pointer-events: none; /*To avoid multiple clicks*/
+  pointer-events: none;
+  /*To avoid multiple clicks*/
 }
