@@ -8,11 +8,13 @@
 .input-search {
   border-top-left-radius: 28px;
   border-bottom-left-radius: 28px;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
   border: 2px solid var(--brand-color_9);
   font-size: 14px;
   padding-left: 15px;
   line-height: 30px;
-  margin-right: -1px;
+  margin-right: -2px;
 }
 
 .input-search:focus {
@@ -23,7 +25,7 @@
   border: 2px solid var(--brand-color_9);
   border-radius: 0px;
   font-size: 14px;
-  margin-right: -1px;
+  margin-right: -2px;
   width: 75px;
   cursor: pointer;
 }
